@@ -214,7 +214,12 @@ const data1={
 // 14. Capitalize string values inside object
 
 const personData = {
-    name: "alice", city: "delhi"
+    name: "alice", 
+    city: "delhi"
+}
+
+const sol ={
+    
 }
 
 
