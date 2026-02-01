@@ -218,8 +218,45 @@ const personData = {
     city: "delhi"
 }
 
-const sol ={
-    
+const sol = Object.fromEntries(
+    Object.entries(personData).map(([key2,value3])=>[
+        key2,
+        value3.charAt(0).toUpperCase() + value3.slice(1)
+    ])
+)
+
+// console.log(sol);
+
+// do it by for in
+
+
+// 15. Convert object to query string
+
+const data2 ={
+    name: "Alice", 
+    age: 25
 }
 
+const query = Object.entries(data2).map((
+    [key ,value2])=> `${key}=${value2}`).join("&")
+
+// console.log(query);
+
+
+// 16. Count even and odd numbers in array
+
+const arr = [1,2,3,4,5,6]
+
+const store =[]
+
+for(let i=0;i<arr.length;i++){
+    if(i%2===0){
+        console.log("Even :",i);
+        return i
+    }
+    else{
+        console.log("odd: ",i);
+        
+    }
+}
 
